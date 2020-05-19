@@ -1,0 +1,11 @@
+<h2><%= @post.title%></h2>
+
+<p><%= @post.content%></p>
+
+<%= link_to 'Post Author', blogger_path(@post.blogger_id) %> |
+
+<%= link_to 'Post Destination', destination_path(@post.destination_id) %> |
+
+<%= link_to 'Edit Post', edit_post_path(@post.id) %> |
+
+<%= link_to 'Back', posts_path %>
